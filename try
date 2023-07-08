@@ -1,0 +1,30 @@
+using System;
+using System.Collection.Generic;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Giraffe
+{
+    class Book
+    {
+        public string title;
+        public string author;
+        public int pages;
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book1 = new Book();
+            book1.title = "Harry Potter";
+            book1.author = "JK Rowling";
+            book1.pages = 400;
+
+            Console.WriteLine(book1.pages);
+
+            Console.ReadLine();
+        }
+      
+    }
+}
