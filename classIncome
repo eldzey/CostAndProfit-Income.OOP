@@ -1,0 +1,13 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+public static class Income
+{
+    public static double CalculateIncome(Product product, int quantity)
+    {
+        double totalSales = product.CalculateSales(quantity);
+        double totalExpenses = Expenses.CalculateExpenses(product, quantity);
+        return totalSales - totalExpenses;
+    }
+}
