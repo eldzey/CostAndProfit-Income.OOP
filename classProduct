@@ -15,20 +15,8 @@ public class Product
         SellingPrice = sellingPrice;
     }
 
-    public double CalculateExpenses(int quantity)
-    {
-        return quantity * Cost;
-    }
-
     public double CalculateSales(int quantity)
     {
         return quantity * SellingPrice;
-    }
-
-    public double CalculateIncome(int quantity)
-    {
-        double totalSales = CalculateSales(quantity);
-        double totalExpenses = CalculateExpenses(quantity);
-        return totalSales - totalExpenses;
     }
 }
